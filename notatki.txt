@@ -1,0 +1,10 @@
+GRID CONTAINER - treść strony. Jeżeli na rodzica nadamy display: grid; to staje się on grid container.
+GRID LINE -  lina między rzędami, kolumnami. Nie ma wymiarów.
+GUTTER - przestrzeń między elementami.
+GRID CELL - każdy pojedyczny element, komórka na stronie.
+GRID AREA - przesteń w którym są elementy, komórki.
+
+GRID TRACK - obejmuje elmenty w jeden osi. 
+GRID COLUMN - obejmeuje wszystkie elmenty w jednej kolumnie.
+GRID ROW - obejmuje wszystkie elemnty w jednym wierszu.
+

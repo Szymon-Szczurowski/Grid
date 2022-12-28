@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+    font-size: 3.6rem;
+}
+
+
+.wrapper {
+    margin: 50px;
+    display: grid;
+
+    // grid-template-columns: repeat(3, 1fr);
+
+    //można ustalać minimum i maximum elmentów
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: 1fr 5fr 1fr;
+
+    // Z AREAS MOŻNA KORZYSTAĆ, ALE PRZY BARDZO MAŁYCH PROJKETAJCH
+    // TAM GDZIE KROPKA USUYWAMY ELEMENT Z SIATKI
+    grid-template-areas: 
+    "nav nav nav"
+    // "aside nav nav"
+    "aside main main"
+    // "footer footer footer"
+    // "aside footer footer"
+    ". footer footer"
+    ;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+nav {
+    background-color: cornflowerblue;
+    grid-area: nav;
+}
+
+main {
+    background-color: slateblue;
+    grid-area: main;
+
+}
+
+aside {
+    background-color: teal;
+    grid-area: aside;
+}
+
+footer {
+  background-color: gold;
+  grid-area: footer;
+}

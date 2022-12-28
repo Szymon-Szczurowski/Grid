@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  font-size: 3.6rem;
+}
+
+.wrapper {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: [one milk] 1fr [two] 1fr [three] 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: cornflowerblue;
+}
+
+.purple {
+  background-color: slateblue;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.one {
+  grid-column: one/three;
+}
+
+.two {
+  grid-column: 3/span 4;
+}
+
+.five {
+  grid-column: 3/-1;
+}/*# sourceMappingURL=positionElement2.css.map */
